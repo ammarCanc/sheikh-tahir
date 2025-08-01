@@ -1,66 +1,94 @@
 body {
-    background-color: white;
-    font-family: "Times New Roman", Times, serif;
-    font-size: 16px;
-    color: #000;
+    font-family: Georgia, serif;
     margin: 0;
-    padding: 0;
+    background-color: #f4f4f4;
+    color: #000;
   }
   
-  .page {
-    width: 900px;
-    margin: 0 auto;
-    border-left: 1px solid #aaa;
-    border-right: 1px solid #aaa;
-    background-color: #fff;
-  }
-  
-  .header img {
-    width: 100%;
-    height: auto;
-    display: block;
-  }
-  
-  .main {
+  .container {
     display: flex;
+    max-width: 1200px;
+    margin: 0 auto;
     padding: 20px;
+    background: #fff;
   }
   
-  .sidebar {
-    width: 200px;
-    border-right: 1px solid #ccc;
-    padding-right: 20px;
+  .main-content {
+    flex: 3;
+    margin-right: 30px;
   }
   
-  .sidebar ul {
-    list-style: none;
-    padding-left: 0;
-  }
-  
-  .sidebar li {
-    margin-bottom: 10px;
-  }
-  
-  .sidebar a {
-    text-decoration: none;
-    color: #003366;
-  }
-  
-  .sidebar a:hover {
-    text-decoration: underline;
-  }
-  
-  .content {
-    padding-left: 20px;
-    width: 100%;
-  }
-  
-  .content h2 {
+  .main-content h1 {
+    font-family: 'Brush Script MT', cursive;
+    font-size: 36px;
     margin-top: 0;
   }
   
-  .content ul {
-    list-style: disc;
-    padding-left: 20px;
+  .bio-section {
+    display: flex;
+  }
+  
+  .bio-section img {
+    width: 220px;
+    height: 220px;
+    margin-right: 20px;
+    border: 1px solid #ccc;
+    border-radius: 20%;
+  }
+  
+  .bio-text ul {
+    list-style-type: square;
+    margin-left: 20px;
+  }
+  
+  .sidebar {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .search-box {
+    display: flex;
+    background: #eee;
+    padding: 10px;
+    border: 1px solid #ccc;
+  }
+  
+  .search-box input {
+    flex: 1;
+    padding: 5px;
+    border: none;
+  }
+  
+  .search-box button {
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .box {
+    background: #f5f5f5;
+    border: 1px solid #ddd;
+    padding: 15px;
+  }
+  
+  .box h4 {
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 10px;
+  }
+  
+  .box a {
+    color: #c00;
+    text-decoration: none;
+  }
+  
+  .contact-box a {
+    color: red;
+    font-weight: bold;
+  }
+  
+  .lab-phone {
+    color: #c00;
   }
   
